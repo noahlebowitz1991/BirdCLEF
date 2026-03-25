@@ -11,4 +11,6 @@ In the future, I would like to improve these results further. Once I am satisfie
 The program takes each audio file and converts it into a timeseries. It then uses PCA with dimensionality reduction for each class.
 I plan to use a CNN with MEL spectrograms in future versions.
 
+All data comes from Kaggle.
+
 The final deadline is June 3.
