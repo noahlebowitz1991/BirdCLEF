@@ -14,3 +14,6 @@ I plan to use a CNN with MEL spectrograms in future versions.
 All data comes from Kaggle.
 
 The final deadline is June 3.
+
+The first two versions of the code use PCA with dimensionality reduction.
+In the third version, I switched over to a mel spectogram with dimensionality reduction. The code is currently very good at detecting insect, mammal, and bird sounds. It still struggles with reptiles and amphibians due to heavily unbalanced data (too few reptiles and non-amphibian recordings).
