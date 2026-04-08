@@ -1,19 +1,12 @@
 # BirdCLEF
 
 One of Kaggle's recent problems is BirdCLEF+ 2026 (https://www.kaggle.com/competitions/birdclef-2026). The project provides copious data taken from Brazil's Pantanal wetlands.
-There are thousands of one minute audio files each consisting of animal noises. For each file, we also have a list of animals that appear in every 5-second increment.
+There are thousands of one minute audio files each consisting of animal noises. For each file, we also have a list of animals that appear in every 5-second increment. These files can contain the sounds of multiple types of animals. On top of this, we have around 60,000 audio files consisting of one type of animal.
 There is also a list of possible animals in the files along with their class (bird, reptile, amphibian, mammal, insect).
 The goal is determine the animals that appear in a files the program has not yet seen.
 
-To start, I have made a program that determines the classes of animals that appear in a given file. Currently, the program has a 92% success rate.
-More precisely, it has 100% for insects, 92% for reptiles, 99% for amphibians, 97% for mammals, and 93% for birds.
-In the future, I would like to improve these results further. Once I am satisfied, I plan to look at specific animal species.
-The program takes each audio file and converts it into a timeseries. It then uses PCA with dimensionality reduction for each class.
-I plan to use a CNN with MEL spectrograms in future versions.
+At this point, the model in best_multilabel_model.keras determines the animal classes in a given audio file with 99.1% accuracy. In the future, I plan to look at specific animal species. For code that generates this model, see animal_class_classifier.ipynb. The program takes each audio file and converts it into a timeseries. It then converts the timeseries to MEL spectrograms and applies a multilabel CNN.
 
 All data comes from Kaggle.
 
 The final deadline is June 3.
-
-The first two versions of the code use PCA with dimensionality reduction.
-In the third version, I switched over to a mel spectogram with dimensionality reduction. The code is currently very good at detecting insect, mammal, and bird sounds. It still struggles with reptiles and amphibians due to heavily unbalanced data (too few reptiles and non-amphibian recordings).
