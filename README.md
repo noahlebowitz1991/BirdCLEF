@@ -5,7 +5,9 @@ There are thousands of one minute audio files each consisting of animal noises. 
 There is also a list of possible animals in the files along with their class (bird, reptile, amphibian, mammal, insect).
 The goal is determine the animals that appear in a files the program has not yet seen.
 
-At this point, the model in best_multilabel_model.keras determines the animal classes in a given audio file with 99.1% accuracy. In the future, I plan to look at specific animal species. For code that generates this model, see animal_class_classifier.ipynb. The program takes each audio file and converts it into a timeseries. It then converts the timeseries to MEL spectrograms and applies a multilabel CNN.
+At this point, the model in best_multilabel_model.keras determines the animal classes in a given audio file with 99.1% accuracy. For code that generates this model, see animal_class_classifier.ipynb. The program takes each audio file and converts it into a timeseries. It then converts the timeseries to MEL spectrograms and applies a multilabel CNN.
+
+The individual animal classes have their own separate models.
 
 All data comes from Kaggle.
 
