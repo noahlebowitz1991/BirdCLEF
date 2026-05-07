@@ -9,6 +9,8 @@ At this point, the model in best_multilabel_model.keras determines the animal cl
 
 The individual animal classes have their own separate models.
 
+I submitted birdclef kaggle submission.ipynb to Kaggle on Wednesday, May 6, 2026. It uses data from many of the other programs on this page.
+
 All data comes from Kaggle.
 
 The final deadline is June 3.
